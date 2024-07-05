@@ -20,3 +20,15 @@ rows.forEach(row => {
     }
 })
 
+
+const pixels = document.querySelectorAll('.pixel')
+
+for (i = 0; i < pixels.length; i++) {
+    pixels[i].addEventListener('mouseover', function (e) {
+        let randomHex = (Math.random() * 0xfffff * 1000000).toString(16)
+        const hexColor = '#' + randomHex.slice(0, 6)
+        e.target.style.background = hexColor
+    })
+}
+
+
