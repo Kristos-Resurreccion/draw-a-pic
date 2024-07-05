@@ -16,6 +16,7 @@ button {
     aspect-ratio: 1/1;
     width: 100%;
     align-items: stretch;
+    border: 5px solid #000;
 }
 
 .row {
@@ -27,5 +28,5 @@ button {
     aspect-ratio: 1/1;
     flex: 1 1 auto;
     width: 1px;
-    background-color: red;
+    opacity: 0;
 }

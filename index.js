@@ -30,6 +30,7 @@ function drawGrid(dimension) {
             let randomHex = (Math.random() * 0xfffff * 1000000).toString(16)
             const hexColor = '#' + randomHex.slice(0, 6)
             e.target.style.background = hexColor
+            e.target.style.opacity = +e.target.style.opacity + .1
         })
     }
 }
